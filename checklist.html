@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Dungeon Masters Assistant</title>
+<div class="nav">
+	<a href="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\index.html">
+		<b>Homepage</b></a>
+	<a href="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\checklist.html">
+		Checklist</a>
+	<a href="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\dice.html">
+		Dice</a>
+	<a href="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\generator.html">
+		Generator</a>
+</div>
+
+</head>
+<!-- Reminder of how to do a comment-->
+<body>
+	<div class="jumbotron text-center" style="background-color:#eedfa4;">
+		<h1 class="h1">General rules checklist</h1> 
+        <h2 class="h2">For Dungeons and Dragons 5th Edition</h2> 
+	  </div>
+		
+	  <div class="container">
+		<div class="row">
+		  <div class="col-sm-4">
+			<div id="listing">
+				<h3 class="h3">Turn options</h3>
+				<p>One turn is a 6 second instance typically used in combat,
+				skill challenges, environmental events etc.</p>
+				<ul>
+					<li><b>Move up to your movement.</b></li>
+					<li><b>Do one Action.</b>
+						<ul>
+							<li><b>Attack:</b> Melee, Ranged, Grapple or Shove.
+								<ul><li><b>Grapple</b> inflicts target with grappled condition.</li>
+								<li><b>Shove</b> can knock target prone or push them 5ft.</li></ul>
+							</li>
+							<li><b>Spell:</b> Check spell for action requirements.</li>
+							<li><b>Dash:</b> Move your movement again.</li>
+							<li><b>Disengage:</b> No opportunity attacks while moving.</li>
+							<li><b>Help:</b> Give advantage on attack or task to another.</li>
+							<li><b>Hide:</b> Stealth check to hide.</li>
+							<li><b>Prepare an action:</b> Prepare to do an action when an event occurs and
+								use your reaction to do that action.</li>
+							<li><b>Dodge:</b> Your DEX saves have advantage and attacks against you have 
+								disadvantage.</li>
+							
+							<li>Search or Investigate</li>
+							<li><b>Use an item:</b> For example drinking a potion.</li>
+						</ul>
+					</li>
+					<li><b>Do one Bonus Action.</b></li>
+					<li><b>Interact:</b> For example opening a door with it's handle.</li>
+				</ul>
+			</div>
+		  </div>
+		  <div class="col-sm-4">
+			<div id="listing">
+				<h3 class="h3">Combat</h3>
+				<p>Combat can start from any sort of hostile action or when the DM
+					finds it appropriate.</p>
+				<p><ul>
+					<li><b>Initiative:</b> Roll to decide turn order.</li>
+					<li><b>Attack:</b>
+						<ol>
+							<li>Pick a target you can reach</li>
+							<li>Roll for the attack</li>
+							<li>Check if the roll + modifiers > target's Armor Class</li>
+							<li>Roll damage and add modifiers</li>
+						</ol>
+						<ul><li>Remember resistances and vulnerabilities!</li></ul>
+					</li>
+					<li><b>Critical Hits:</b> A roll of 20. Damage dice are rolled twice.
+						<ul><li>Add modifiers only after the damage roll.</li></ul>
+					</li>
+					<li><b>Ranged attacks:</b> The further of the two ranges has Disadvantage.</li>
+					<li><b>Opportunity Attack:</b> A reaction to melee attack someone exiting your attack range.</li>
+					<li><b>Knock Out:</b> Melee hit dropping target to 0HP can be chosen to be non-lethal.</li>
+					<li><b>Unconcious:</b> Dropping to 0HP.</li>
+					<li><b>Death Save:</b> Roll a d20 when starting turn with 0HP.
+						3 successes makes you stable, still unconcious. 3 failures kills you.
+						<ul>
+							<li>1 = 2 Failures.</li>
+							<li>2-9 = 1 Failure.</li>
+							<li>10-19 = 1 Success.</li>
+							<li>20 = Recover 1 HP.</li>
+							<li>Taking damage when 0HP = 1 Failure.</li>
+							<li>Critical hits when 0HP = 2 Failures.</li>
+							<li>Melee hits against 0HP target = Always Critical.</li>
+							<li>If HP is restored, remove previous Death Saves and return concious.</li>
+						</ul>
+					</li>
+					<li><b>Instant Death:</b> If leftover damage past you hitting 0HP is equal or more than
+						your max HP, you die.
+					</li>
+				</ul></p>
+			</div>
+		  </div>
+		  <div class="col-sm-4">
+			<div id="listing">
+				<h3 class="h3">Other</h3>        
+				<p><b>Resting:</b> A group can rest to recover lost hit points (HP).</p>
+				<ul>
+					<li><b>Short Rest:</b> 1 hour. Use Hit Dice to recover HP, adding CON modifier to roll.</li>
+					<li><b>Long Rest:</b> 8 hours. Recover all lost Hit Points, abilities and half of your Hit Dice.</li>
+				</ul>
+				<p><b>Movement:</b> Movement other than walking/dashing has special rules.</p>
+				<ul>
+					<li>Standing up from prone costs half of your movement.</li>
+					<li>Jumping costs movement equal to distance covered by jump.</li>
+					<li>Jump distance is equal to half of your strength score in feet.
+						If you move at least 10ft before, jump distance = your strength score in feet.
+					</li>
+					<li>Vertical Jump height if you moved at least 10ft before the jump 
+						= 3 + Strength modifier in feet. Without the movement it is halved.</li>
+				</ul>
+				<p><b>Inspiration</b> can be given by a DM. You can use an Inspiration for Advantage on one d20 roll
+					or gift your inspiration to another player.</p>
+				<p><b>Reactions</b> can be used once per round. Reactions can be used at anytime on anyones turn,
+					but typically have conditions to use (for example Counterspell requires a spell to counter).
+				</p>
+			</div>	
+		  </div>
+		</div>
+	  </div>
+      <div id="spacing"></div>
+	<footer id="footer" style="background-color:#eedfa4; top: calc(100vh-75px); position: sticky;"> <!--Korkeus on 75px, joten maximi koko -75px on footerin sijainti. Koska sivun sisältö menee yli sivun normaalin pituuden, kirjoitin kyseisen osan suoraan HTML puolelle, jotta voin käyttää muuten samaa CSS tiedostoa koko verkkosivustolle-->
+		<p>Website created by Pyry Ahtiainen with no claim to own the material 
+			on the webpage.</p>
+		<p>This website has been created as an assignment & for personal use
+			as an assiting tool in running Dungeons and Dragons campaigns as a Dungeon Master.
+		</p>
+	</footer>
+</body>
+</html>

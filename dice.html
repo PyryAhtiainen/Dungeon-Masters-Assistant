@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\dice.js" defer></script>
+	<title>Dungeon Masters Assistant</title>
+<div class="nav">
+	<a href="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\index.html">
+		<b>Homepage</b></a>
+	<a href="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\checklist.html">
+		Checklist</a>
+	<a href="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\dice.html">
+		Dice</a>
+	<a href="C:\Users\Pyry\Desktop\Verkkosivujen kehittäminen\Verkkosivu\generator.html">
+		Generator</a>
+</div>
+
+</head>
+<!-- Reminder of how to do a comment-->
+<body>
+	<div class="jumbotron text-center" style="background-color:#eedfa4;">
+		<h1 class="h1">Dice</h1>
+		<h2 class="h2">You can roll multiple of the same dice here!</h2> 
+	  </div>
+		
+	  <div class="container">
+		<div class="row">
+		  <div class="col-sm-2">
+			<div id="listing">
+				<h3 class="h3">d20</h3>
+				<button class="button" onclick="rollDice(20)">Roll Dice</button>
+				<input type="number" id="numDice20" placeholder="Number of Dice">
+				<div id="results20"></div>
+			</div>
+		  </div>
+			<div class="col-sm-2">
+			  <div id="listing">
+				  <h3 class="h3">d12</h3>
+				  <button class="button" onclick="rollDice(12)">Roll Dice</button>
+				  <input type="number" id="numDice12" placeholder="Number of Dice">
+				  <div id="results12"></div>
+			  </div>
+			</div>
+			<div class="col-sm-2">
+				<div id="listing">
+					<h3 class="h3">d10</h3>
+					<button class="button" onclick="rollDice(10)">Roll Dice</button>
+					<input type="number" id="numDice10" placeholder="Number of Dice">
+					<div id="results10"></div>
+				</div>
+			  </div>
+			  <div class="col-sm-2">
+				<div id="listing">
+					<h3 class="h3">d8</h3>
+					<button class="button" onclick="rollDice(8)">Roll Dice</button>
+					<input type="number" id="numDice8" placeholder="Number of Dice">
+					<div id="results8"></div>
+				</div>
+			  </div>
+			  <div class="col-sm-2">
+				<div id="listing">
+					<h3 class="h3">d6</h3>
+					<button class="button" onclick="rollDice(6)">Roll Dice</button>
+					<input type="number" id="numDice6" placeholder="Number of Dice">
+					<div id="results6"></div>
+				</div>
+			  </div>
+			  <div class="col-sm-2">
+				<div id="listing">
+					<h3 class="h3">d4</h3>
+					<button class="button" onclick="rollDice(4)">Roll Dice</button>
+					<input type="number" id="numDice4" placeholder="Number of Dice">
+					<div id="results4"></div>
+				</div>
+			  </div>
+		</div>
+	  </div>
+	<footer id="footer" style="background-color:#eedfa4;">
+		<p>Website created by Pyry Ahtiainen with no claim to own the material 
+			on the webpage.</p>
+		<p>This website has been created as an assignment & for personal use
+			as an assiting tool in running Dungeons and Dragons campaigns as a Dungeon Master.
+		</p>
+	</footer>
+</body>
+</html>
