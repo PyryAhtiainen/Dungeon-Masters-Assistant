@@ -69,13 +69,13 @@
 	text-align: left;
 }
 
-#listing ul{
+.listing ul{
 	padding: 5px;
     margin: 3px;
 	font-size: small;
 }
 
-#listing ol{
+.listing ol{
 	padding: 5px;
     margin: 3px;
 	font-size: small;
